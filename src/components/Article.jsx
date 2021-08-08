@@ -2,8 +2,10 @@
 import {Content, Title}from "./index";
 
 const Article = (props) => {
-    const [isPublished, setIsPublished] = useState(false)
-    console.log(isPublished)
+    const [isPublished, setIsPublished] = useState(initialStatefalse)
+    const publishArticle = () =>{
+        StyleSheetList(valuetrue)
+    }
     return (
         <div>
             <h2>{props.title}</h2>
