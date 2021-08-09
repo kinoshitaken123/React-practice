@@ -1,17 +1,18 @@
-// Article.jsx(export元)
-import {Content, Title}from "./index";
+import {useState} from "react";
+import {Content, PublishButton, Title} from "./index";
 
 const Article = (props) => {
-    const [isPublished, setIsPublished] = useState(initialStatefalse)
-    const publishArticle = () =>{
-        StyleSheetList(valuetrue)
-    }
-    return (
-        <div>
-            <h2>{props.title}</h2>
-            <p>{props.content}</p>
-        </div>
-    );
+  const [isPublished, setIsPublished] = useState(false)
+  const publishArticle = () => {
+    setIsPublished(true)
+  }
+  return (
+    <div>
+      <Title title={props.title} />
+      <Content content={props.content} />
+      <PublishButton isPublished={isPublished} onClick={() => publishArticle()} />
+    </div>
+  );
 };
 
 export default Article;
