@@ -10,6 +10,7 @@ const Counter = () => {
   const countDown = () => {
     setCount(prevState => prevState - 1)
   }
+  
   return (
     <div>
       <p>
