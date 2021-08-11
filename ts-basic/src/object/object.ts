@@ -21,3 +21,18 @@ export default function objectSample() {
   }
   console.log('Object object sample 2:', country)
 }
+// オプショナル(?)なプロパティと読み取り専用(readonly)プロパティ
+const kentaro: {
+    age: number
+    lastName: string
+    readonly firstName: string
+    gender?: string
+ } = {
+     age: 28,
+     lastName: 'Yamada',
+     firstName: 'Taro'
+ }
+
+    kentaro.gender = 'male'
+    kentaro.lastName = 'Kamado'
+    console.log('Object object sample 3:', kentaro)
