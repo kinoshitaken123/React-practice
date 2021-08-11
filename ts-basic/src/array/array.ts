@@ -15,4 +15,17 @@ export default function arraySample () {
     ids.push(456)
 
     console.log("Array array sample 3:",ids)
+
+    // 配列の型推論
+    const generateSomeArray = () => {
+        const _someArray = [] 
+        _someArray.push(123)
+        _someArray.push("ABC")
+        return _someArray
+    }
+
+    const someArray = generateSomeArray()
+    someArray.push(456)
+
+    console.log("Array array sample 4:", someArray)
 }
