@@ -28,4 +28,9 @@ export default function arraySample () {
     someArray.push(456)
 
     console.log("Array array sample 4:", someArray)
+
+    // イミュータブルな配列 
+    const commands: readonly string[] = ["git add", "git commit", "git push"]
+
+    console.log("Array array sample 5:", commands)
 }
