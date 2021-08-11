@@ -36,3 +36,16 @@ const kentaro: {
     kentaro.gender = 'male'
     kentaro.lastName = 'Kamado'
     console.log('Object object sample 3:', kentaro)
+
+  // インデックスシグネチャ
+  const capitals: {
+      [countryName: string]: string
+  } = {
+      Japan: 'Tokyo',
+      Korea: 'Seoul'
+  }
+
+  capitals.Chaina ='Beijing'
+  capitals.Canada ='Ottawa'
+
+  console.log('Object object sample 4:', capitals)
