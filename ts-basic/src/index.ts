@@ -41,4 +41,6 @@
 // 07 ジェネリック型とポリモーフィズム
 
 import genericsSample from './generics/basic'
+import genericsAdvancedSample from './generics/advanced'
 genericsSample()
+genericsAdvancedSample()
