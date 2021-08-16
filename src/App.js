@@ -1,32 +1,25 @@
-import {useEffect, useState} from "react";
+import Article from "./components/Article";
 
 function App() {
-  const [name, setName] = useState('')
-  const [id, setId] = useState('deatiger')
-  const ids = ['deatiger', 'gaearon', 'aws', 'google', 'facebook']
-  const getRandomId = () => {
-    const _id = ids[Math.floor(Math.random() * ids.length)]
-    setId(_id)
-  }
-
-  useEffect(() => {
-    fetch(`https://api.github.com/users/${id}`)
-      .then(res => res.json())
-      .then(data => {
-        console.log(data)
-        setName(data.name)
-      })
-      .catch(error => {
-        console.error(error)
-      })
-  },[id])
-
-  return (
-    <div>
-      <p>{id}の、GitHub上の名前は{name}です。</p>
-      <button onClick={getRandomId}>IDを変更</button>
-    </div>
-  );
+  return(
+   <div>
+    <Article
+     title={'新日本一わかりやすいReact'}
+     content={'今日のトピックはpropsです'}
+    /> 
+    <Article
+     title={'新日本一わかりやすいReact2'}
+     content={'今日のトピックはpropsです'}
+    /> 
+    <Article
+     title={'新日本一わかりやすいReact3'}
+     content={'今日のトピックはpropsです'}
+    /> 
+   </div> 
+  )
 }
 
 export default App;
+
+// コンポーネントは再利用する事ができる
+// 配列データをmap メソッドで処理することができる
