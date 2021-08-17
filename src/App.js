@@ -1,9 +1,10 @@
 import {Article, TextInput,Counter} from "./components";
+import ToggleButton from "./components/ToggleButton";
 
 function App() {
   return(
    <div>
-    <Counter />
+    <ToggleButton />
     {/* <Article
      title={'新日本一わかりやすいReact2'}
      content={'今日のトピックはpropsです'}
