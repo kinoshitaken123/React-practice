@@ -1,9 +1,9 @@
-import {Article, TextInput} from "./components";
+import {Article, TextInput,Counter} from "./components";
 
 function App() {
   return(
    <div>
-    <TextInput/> 
+    <Counter />
     {/* <Article
      title={'新日本一わかりやすいReact2'}
      content={'今日のトピックはpropsです'}
@@ -13,7 +13,7 @@ function App() {
      content={'今日のトピックはpropsです'}
     />  */}
    </div> 
-  )
+  );
 }
 
 export default App;
