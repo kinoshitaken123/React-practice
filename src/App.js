@@ -1,20 +1,17 @@
-import Article from "./components/Article";
+import {Article, TextInput} from "./components";
 
 function App() {
   return(
    <div>
-    <Article
-     title={'新日本一わかりやすいReact'}
-     content={'今日のトピックはpropsです'}
-    /> 
-    <Article
+    <TextInput/> 
+    {/* <Article
      title={'新日本一わかりやすいReact2'}
      content={'今日のトピックはpropsです'}
     /> 
     <Article
      title={'新日本一わかりやすいReact3'}
      content={'今日のトピックはpropsです'}
-    /> 
+    />  */}
    </div> 
   )
 }
