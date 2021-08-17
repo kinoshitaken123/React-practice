@@ -2,7 +2,7 @@
 // ・１ファイルから複数モジュールを読み込む
 // ・エントリポイントから複数コンポーネントを読み込む
 import { useState } from "react";
-import {Content, Title, PublishButton} from "./index";
+import { PublishButton} from "./index";
 
 // propsでデータを受け渡し
 // ・子コンポーネントの引数にpropsを指定する
@@ -16,9 +16,9 @@ const Article = (props) => {
 
   return (
     <div>
-      <Title title={props.title} />
+      {/* <Title title={props.title} />
       <Content content={props.content} />
-      <Publishbutton isPublished= {isPublished} onClick ={publishArticle} />
+      <Publishbutton isPublished= {isPublished} onClick ={publishArticle} /> */}
     </div>
   );
 };
