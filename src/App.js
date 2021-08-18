@@ -5,7 +5,7 @@ function App() {
   return(
    <div>
     <ToggleButton />
-    <Counter />
+    {/* <Counter /> */}
     {/* <Article
      title={'新日本一わかりやすいReact2'}
      content={'今日のトピックはpropsです'}

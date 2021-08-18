@@ -21,8 +21,14 @@ const Counter = () => {
   }
 
   useEffect(() => {
-    console.log("Current count is...",count)
-  },[])
+    console.log("Current state is...", 'open')
+    if ('open') {
+      console.log('Subscribe database...')
+    }
+    return() => {
+      console.log('Unsubscribe database!')
+    }
+  })
 
   return (
     <div>
